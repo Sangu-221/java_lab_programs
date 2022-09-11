@@ -43,8 +43,8 @@ public class lab16 {
 	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the infix expression with adding a ')' and '#' at the end-->");
-		String infix = sc.next();
+		System.out.println("Enter the infix expression-->");
+		String infix = sc.next() + ")#";
 		int n = infix.length();
 		char postfix [] =new char[n];
 		stack s = new stack(n);
